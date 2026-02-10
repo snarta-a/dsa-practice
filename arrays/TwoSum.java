@@ -3,7 +3,7 @@
 // Time Complexity: O(n)
 // Space Complexity: O(n)                                       
                                                                /*  approach
-                                                                1 2 3
+                                                                1 2
                                                                 5
 
                                                                 1 -> 5 - 1 = 4 ? No
