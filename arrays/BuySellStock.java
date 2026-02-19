@@ -25,3 +25,6 @@ public class BuySellStock{
     return max_profit;
 }
 }
+public static void main(){
+    
+}
