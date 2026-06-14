@@ -2,18 +2,20 @@ public class segregate0and1 {
 
     public static void segregateZeroandOne(int[] arr) {
 
-        int left = 0;
-        int right = arr.length - 1;
+        int left = 0;             // start pointer
+        int right = arr.length - 1;  //end pointer
 
         while (left < right) {
 
             if (arr[left] == 0) {
-                left++;
+                left++;                   // 0 is in correct place 
             }
             else if (arr[right] == 1) {
-                right--;
+                right--;                  // 1 is in correct place 
             }
             else {
+                 
+                //swap 1 and 0 
 
                 int temp = arr[left];
                 arr[left] = arr[right];

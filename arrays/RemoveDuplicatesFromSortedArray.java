@@ -1,35 +1,26 @@
 public class RemoveDuplicatesFromSortedArray {
+    public static int removeDuplicates(int [] nums){
+        int i = 0 ;
+        for (int j=1; j<nums.length; j++){
+            if(nums[i] != nums[j]){
+                i++;
 
-    public static void main(String[] args) {
-
-        int nums[] = {1, 1, 2};
-
-        int newLength = removeDuplicates(nums);
-
-        System.out.println("New length: " + newLength);
-
-        for (int i = 0; i < newLength; i++) {
-            System.out.print(nums[i] + " ");
-        }
-    }
-
-    public static int removeDuplicates(int[] nums) {
-
-        if (nums.length == 0) 
-        return 0;
-
-        int count = 1;  // First element is always unique
-
-        for (int i = 1; i < nums.length; i++) {
-
-            if (nums[i] != nums[i - 1]) {
-                nums[count] = nums[i];
-                count++;
+            nums[i] = nums[j];
             }
         }
-
-        return count;
+        return i+1;
     }
+public static void main (String[]args){
+    int [] nums ={0,0,1,1,1,2,2,3,3,4};
+    int k = removeDuplicates(nums);
 
+    System.out.println("Number of unique element = " + k);
+
+    System.out. println("Array after removing duplicates :");
+
+    for (int i =0; i<k;i++){
+        System.out.println(nums[i] + " ");
+    }
 }
-pu
+}
+
